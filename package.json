@@ -28,6 +28,9 @@
         "lint-staged": "^10.3.0",
         "prettier": "^2.1.1"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
