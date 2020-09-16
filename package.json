@@ -8,8 +8,6 @@
         "mould",
         "cli"
     ],
-    "module": "index.js",
-    "types": "index.d.ts",
     "bin": {
         "mould": "bin/mould"
     },
