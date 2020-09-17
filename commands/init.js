@@ -38,15 +38,6 @@ if (!fs.existsSync(paths.resolvers)) {
     )
 }
 
-if (!fs.existsSync(paths.setup)) {
-    fs.writeFileSync(paths.setup, 'export default () => ({})')
-
-    console.log(
-        `Created ${chalk.green(path.basename(paths.setup))} ` +
-            `at ${chalk.green(paths.mouldDirectory)}`
-    )
-}
-
 console.log(
     '\nYou could begin by typing:\n\n' +
         `  ${chalk.cyan(yarn(mould('connect')))}\n\n` +
