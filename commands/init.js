@@ -29,6 +29,18 @@ if (fs.existsSync(paths.mouldDirectory)) {
     )
 }
 
+if (!fs.existsSync(paths.index)) {
+    fs.writeFileSync(
+        paths.index,
+        "export * from '!!babel-loader!@binance/mloader!./.mould'"
+    )
+
+    console.log(
+        `Created ${chalk.green(path.basename(paths.index))} ` +
+            `at ${chalk.green(paths.mouldDirectory)}`
+    )
+}
+
 if (!fs.existsSync(paths.resolvers)) {
     fs.writeFileSync(paths.resolvers, 'export default {}')
 
