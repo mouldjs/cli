@@ -5,4 +5,5 @@ export default {
     mouldDirectory: resolvePath('mould'),
     schema: resolvePath('mould/.mould'),
     resolvers: resolvePath(`mould/resolvers.${useTs() ? 'ts' : 'js'}`),
+    index: resolvePath('mould/index.js'),
 }
